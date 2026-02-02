@@ -4,9 +4,12 @@ A CDN-hosted repository for fonts and other static assets, optimized for use in 
 
 ## 📦 What's Inside
 
-This repository hosts web-optimized font files that can be loaded directly via jsDelivr CDN. All fonts are provided in both WOFF and WOFF2 formats for maximum email client and browser compatibility.
+This repository hosts web-optimized assets (fonts and icons) that can be loaded directly via jsDelivr CDN for use in HTML emails and web applications.
 
-### Available Fonts
+### Available Assets
+
+#### Fonts
+All fonts are provided in both WOFF and WOFF2 formats for maximum email client and browser compatibility.
 
 #### Roobert
 - **Weights:** Regular, Medium, SemiBold, Bold
@@ -15,6 +18,11 @@ This repository hosts web-optimized font files that can be loaded directly via j
 #### Rebond Grotesque
 - **Weights:** Regular, Bold
 - **Formats:** WOFF, WOFF2
+
+#### Social Media Icons
+- **Format:** SVG (optimized for email)
+- **Usage:** Email footers, social links
+- See [icons/ICONS-GUIDE.md](icons/ICONS-GUIDE.md) for setup instructions
 
 ---
 
@@ -163,7 +171,30 @@ Add this to your email template's `<style>` tag:
 
 ---
 
-## 🛠️ Development
+## 🎨 Social Media Icons
+
+### Adding Icons
+
+Place SVG or PNG icons in the `icons/social/` folder. They'll automatically be available via jsDelivr:
+
+```
+https://cdn.jsdelivr.net/gh/Blockstal-Co/supa-assets/icons/social/{icon-name}.svg
+```
+
+### Example Usage in Email
+
+```html
+<a href="https://facebook.com/yourpage">
+  <img src="https://cdn.jsdelivr.net/gh/Blockstal-Co/supa-assets/icons/social/facebook.svg" 
+       alt="Facebook" 
+       width="32" 
+       height="32">
+</a>
+```
+
+For detailed setup instructions, see [icons/ICONS-GUIDE.md](icons/ICONS-GUIDE.md)
+
+---
 
 ### Adding New Fonts
 
