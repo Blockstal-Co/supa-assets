@@ -1,0 +1,6 @@
+# Source font files (don't commit the original files)
+source-fonts/
+local/
+
+# System files
+.DS_Store
